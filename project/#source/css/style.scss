@@ -1,1 +1,98 @@
 @import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	height: 100%;
+	background-color: #FBF1E6;
+}
+.container {
+	max-width: 1850px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+nav{
+	max-height: 100px;
+	
+	width: 100%;
+}
+.nav__row {
+	height: 9.2vh;
+	display: flex;
+	justify-content: space-between;
+	line-height: 9.2vh;
+	color:  #67513B;
+
+}
+.nav__row-start {
+	padding-left: 42px;
+	display: flex;
+}
+.nav__row-find {}
+.nav__row-lang {
+	padding-left: 10px;
+}
+.nav__row-header {}
+.nav__row-burger {
+	padding-right: 42px;
+}
+header{
+	height: 91.8vh;
+	width: 100%;
+	background-image: url(../img/header.png);
+	background-repeat: no-repeat;
+	background-position: center;
+   background-size: cover;
+}
+.header__row {}
+.header__row-right {}
+.header__row-shades {}
+.main__row-shades {}
+.main__row-shades-body {}
+.main__row-shades-body-title {}
+.main__row-shades-body-text {}
+.main__row-shades-body-slider {}
+.slider__row {}
+.slider__row-arrows {}
+.slider__row-line {}
+.slider__row-pages {}
+.main__row-shades-body-img {}
+.main__row-golden {}
+.main__row-golden-body {}
+.main__row-golden-body-title {}
+.main__row-golden-body-text {}
+.main__row-golden-body-slider {}
+.main__row-golden-body-img {}
+.main__row-sorrento {}
+.main__row-sorrento-body {}
+.main__row-sorrento-body-title {}
+.main__row-sorrento-body-text {}
+.main__row-sorrento-body-img {}
+.main__row-sorrento-body-right {}
+.main__row-sorrento-body-right-slider {}
+.main-gallery {}
+.main-gallery__row {}
+.main-gallery__row-left {}
+.main-gallery__row-left-body {}
+.main-gallery__row-left-body__text {}
+.main-gallery__row-left-body__text-title {}
+.main-gallery__row-center {}
+.main-gallery__row-right {}
+.footer__info {}
+.footer__info-title {}
+.footer__info-text {}
+.footer__priorities {}
+.footer__priorities-title {}
+.footer__priorities-text {}
+.footer__priorities-close {}
+.footer__priorities-close__row {}
+.footer__email {}
+.footer__email-title {}
+.footer-bootom__row {}
+.footer-bootom__row-left {}
+.footer-bootom__row-center {}
+.footer-bootom__row-right {}
+.footer-subTitle {}
+.footer-copyright {}
+.footer-copyright__row {}
+.footer-copyright__row-left {}
