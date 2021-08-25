@@ -262,8 +262,24 @@ main {
      object-fit: contain;
 }
 
+.main__row-shades {
+  background-image: url(../img/mainL.png);
+  background-repeat: no-repeat;
+}
+
 .slider__row {
   padding-bottom: 116px;
+}
+
+.main__row-golden-body {
+  background-image: url(../img/icons/footerStar.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.main__row-sorrento-body {
+  background-image: url(../img/mainS.png);
+  background-repeat: no-repeat;
 }
 
 .main__row-sorrento-body-img img {
@@ -275,4 +291,105 @@ main {
 
 .main__row-sorrento-body-right {
   width: 60%;
+}
+
+.main-gallery {
+  padding-bottom: 130px;
+}
+
+.main-gallery__row {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-gallery__row-left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 20%;
+  padding-left: 100px;
+}
+.main-gallery__row-left:first-child {
+  max-width: 240px;
+  padding-right: 15px;
+}
+
+.main-gallery__row-left-body img {
+  padding-right: 30px;
+  max-width: 420px;
+}
+
+.main-gallery__row-left-body__text p {
+  text-align: right;
+  padding-top: 12px;
+  padding-bottom: 40px;
+  padding-right: 25px;
+  color: #67513B;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.155em;
+}
+
+.main-gallery__row-left-body__text-title {
+  font-style: italic;
+  font-size: 65px;
+  color: #E7E3E0;
+  padding-left: 20px;
+}
+
+.main-gallery__row-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-gallery__row-center img {
+  padding-bottom: 10px;
+}
+.main-gallery__row-center img:first-child {
+  max-width: 420px;
+  width: 110%;
+}
+.main-gallery__row-center img:last-child {
+  max-width: 300px;
+}
+
+.main-gallery__row-right {
+  min-width: 20%;
+  margin-left: -115px;
+}
+
+@media (max-width: 992px) {
+  .title {
+    text-align: center;
+  }
+
+  .row {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .main__row-shades-img {
+    display: none;
+  }
+
+  .main__row-golden-img {
+    display: none;
+  }
+
+  .main__row-sorrento-body-right {
+    display: none;
+  }
+
+  .slider__row {
+    display: none;
+  }
 }
