@@ -23,7 +23,6 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	align-items:center;
-	
 	color:  #67513B;
 
 }
@@ -55,18 +54,22 @@ header{
 
 }
 .header__row {
-
+    width: 100%;
 }
 .header__row-right {
 	font-size: 20px;
 	display: flex;
 	justify-content: flex-end;
-	padding: 10px 20px;
+	padding: 0px 20px;
+	
 }
 .header__row-shades {
+		display: flex;
+		justify-content: space-between;
 	ul{
+		width: 100%;
 		font-size: 50px;
-		padding: 10px 20px;
+		padding: 5px 20px 44px 20px;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;

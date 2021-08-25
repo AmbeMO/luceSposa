@@ -167,6 +167,10 @@ header {
   color: #67513B;
 }
 
+.header__row {
+  width: 100%;
+}
+
 .header__row-right {
   font-size: 20px;
   display: -webkit-box;
@@ -175,12 +179,21 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 
+.header__row-shades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .header__row-shades ul {
+  width: 100%;
   font-size: 50px;
-  padding: 10px 20px;
+  padding: 5px 20px 44px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
