@@ -207,6 +207,10 @@ header {
 .header__row-shades ul span {
   font-size: 20px;
   color: #FBF1E6;
+  background-image: url(../img/icons/mainLine.png);
+  background-repeat: no-repeat;
+  padding-left: 85px;
+  background-position: left;
 }
 
 main {
@@ -450,6 +454,112 @@ input[type=email] {
   font-size: 21px;
   line-height: 151.7%;
   padding-bottom: 46px;
+}
+
+.footerHr {
+  max-width: 100%;
+}
+
+.footer-bootom__row {
+  font-size: 12px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-news {
+  background-image: url(../img/icons/footerNews.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 15px;
+  background-position: left;
+}
+
+.footer-geo {
+  background-image: url(../img/icons/footerGeo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 15px;
+  background-position: left;
+}
+
+.footer-bootom__row-left {
+  width: 33%;
+  color: #000000;
+}
+.footer-bootom__row-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-bootom__row-left ul li {
+  margin-left: 40px;
+}
+
+.footer-bootom__row-center {
+  width: 33%;
+  text-align: center;
+}
+
+.footer-bootom__row-right {
+  width: 33%;
+}
+.footer-bootom__row-right ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-bootom__row-right ul li {
+  margin-right: 20px;
+}
+
+.footer-subTitle {
+  text-align: center;
+  padding-bottom: 13px;
+}
+
+.footer-copyright {
+  height: 30px;
+  background-color: #FBF1E6;
+}
+
+.footer-copyright__row {
+  font-size: 10px;
+  line-height: 151.7%;
+  color: #A49D96;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-copyright__row span {
+  color: #000;
+}
+
+.footer-copyright__row-left {
+  font-size: 10px;
+  line-height: 151.7%;
+  color: #A49D96;
+}
+.footer-copyright__row-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-copyright__row-left ul li {
+  padding-left: 20px;
 }
 
 @media (max-width: 992px) {
