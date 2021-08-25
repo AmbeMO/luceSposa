@@ -136,7 +136,13 @@ main{
 .main__row-shades {
 	background-image: url(../img/mainL.png);
 	background-repeat: no-repeat;
+	background-position: top left;
+	transition: all 2s ease-out;
 // padding-bottom: 20px;	
+	&:hover{
+		background-position: 0% 20%;
+		transition: all 2s ease-out;
+	}
 }
 .main__row-shades-body {
 
@@ -181,6 +187,11 @@ main{
 .main__row-sorrento-body {
 	background-image: url(../img/mainS.png);	
 	background-repeat: no-repeat;
+	transition: all 2s ease-out;
+	&:hover{
+		background-position: 0% 20%;
+		transition: all 2s ease-out;
+	}
 }
 .main__row-sorrento-body-title {}
 .main__row-sorrento-body-text {}
@@ -205,10 +216,10 @@ main{
 	// width: 100%;
 }
 .main-gallery__row {
-
 	overflow: hidden;
 	// height: 830px;
 	display: flex;
+	flex-wrap: no-wrap;
 	// justify-content:flex-center;
 }
 .main-gallery__row-left {
@@ -451,5 +462,24 @@ input[type=email]{
 	}
 	.slider__row{
 		display: none;
+	}
+	.main-gallery__row{
+		margin: 0 auto;
+		display: flex;
+		align-items:center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 10px 0px;
+	}
+	.main-gallery__row-left{
+		padding-left: 0px;
+		align-items:center;
+		padding-bottom: 10px;
+	}
+	.main-gallery__row-center{
+		align-items:center;
+	}
+	.main-gallery__row-right{
+		margin-left: 0px;
 	}
 }
