@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -135,6 +136,10 @@ nav {
   padding-left: 10px;
 }
 
+.nav__row-header {
+  padding: 10px;
+}
+
 .nav__row-burger {
   padding-right: 42px;
 }
@@ -146,4 +151,65 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: #67513B;
+}
+
+.header__row-right {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.header__row-shades ul {
+  font-size: 50px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header__row-shades ul span {
+  font-size: 20px;
+  color: #FBF1E6;
+}
+
+main {
+  color: #513C27;
+}
+
+.main__row-shades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__row-shades-body-title {
+  font-size: 48px;
+}
+
+.main__row-shades-body-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+}
+
+.main__row-golden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__row-sorrento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

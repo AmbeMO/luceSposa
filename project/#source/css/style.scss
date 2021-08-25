@@ -1,5 +1,6 @@
 @import "nullstyle.scss";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .wrapper {
 	overflow: hidden;
 	min-height: 100%;
@@ -32,7 +33,9 @@ nav{
 .nav__row-lang {
 	padding-left: 10px;
 }
-.nav__row-header {}
+.nav__row-header {
+	padding: 10px;
+}
 .nav__row-burger {
 	padding-right: 42px;
 }
@@ -43,27 +46,63 @@ header{
 	background-repeat: no-repeat;
 	background-position: center;
    background-size: cover;
+   color: #67513B;
+
 }
-.header__row {}
-.header__row-right {}
-.header__row-shades {}
-.main__row-shades {}
+.header__row {
+
+}
+.header__row-right {
+	font-size: 20px;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 20px;
+}
+.header__row-shades {
+	ul{
+		font-size: 50px;
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		span{
+			font-size: 20px;
+			color: #FBF1E6;
+		}
+	}
+		
+}
+main{
+	color: #513C27;
+}
+.main__row-shades {
+	display: flex;
+}
 .main__row-shades-body {}
-.main__row-shades-body-title {}
-.main__row-shades-body-text {}
+.main__row-shades-body-title {
+	font-size: 48px;
+}
+.main__row-shades-body-text {
+	font-family: 'Playfair Display', serif;
+	font-weight: 300;
+}
 .main__row-shades-body-slider {}
 .slider__row {}
 .slider__row-arrows {}
 .slider__row-line {}
 .slider__row-pages {}
 .main__row-shades-body-img {}
-.main__row-golden {}
+.main__row-golden {
+	display: flex;
+}
 .main__row-golden-body {}
 .main__row-golden-body-title {}
 .main__row-golden-body-text {}
 .main__row-golden-body-slider {}
 .main__row-golden-body-img {}
-.main__row-sorrento {}
+.main__row-sorrento {
+	display: flex;
+}
 .main__row-sorrento-body {}
 .main__row-sorrento-body-title {}
 .main__row-sorrento-body-text {}
