@@ -402,11 +402,36 @@ footer{
 	flex-direction: column;
 	align-items: center;
 }
-input[type=email]{
-	max-width: 335px;
-	background-image: url(../img/icons/footerSend.png);
-	background-repeat: no-repeat;
-	background-position: center right;
+.email__choose{
+	cursor: pointer;
+	ul{
+		display: flex;
+		li{
+			padding: 10px;
+		}
+	}
+}
+form{
+	display: flex;
+	width: 100%;
+	align-items:center;
+
+	flex-direction: column;
+}
+#form-bride{
+	// display: none;
+}
+#form-feedback{
+	// display: none;
+}
+#brides, #salons, #feedbacks{
+	border:none;
+	background-color: #fff;
+	border-bottom: 1px solid #000;
+}
+input[type=email],input[type=text], input[type=phone] {
+	// max-width: 335px;
+	width: 60%;
 	color: #67513B;
 	padding: 8px;
 	font-size: 14px;

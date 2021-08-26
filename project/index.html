@@ -335,11 +335,44 @@
 				<div class="footer__email">
 					<div class="footer__email-title">
 						<p>
-							Sign-up for our newsletter and get the latest news
+							Contact with us
 						</p>
 					</div>
-					<form>
-						<input type="email" value="Enter your email">
+					<div class="email__choose">
+						<ul>
+							<!-- <li><a id="brides" href="#">Bride</a></li>
+							<li><a id="salons" href="#">Salon</a></li>
+							<li><a id="feedbacks" href="#">Feedbac</a></li> -->
+							<li><input id="brides" type="button" value="Bride"></li>
+							<li><input id="salons" type="button" value="Salon"></li>
+							<li><input id="feedbacks" type="button" value="Feedback"></li>
+						</ul>
+					</div>
+
+					<form id="form-salon">
+						<input id="salonSalon" type="text" value="Salon" required>
+						<input id="salonCountry" type="text" value="Country" required>
+						<input id="salonCity" type="text" value="City" required>
+						<input id="salonInsta" type="text" value="Page in Instagram/Facebook/web" required>
+						<input id="salonName" type="text" value="Name" required>
+						<input id="salonEmail" type="email" value="Email" required>
+						<input id="salonPhone" type="phone" value="Phone" required>
+						<input id="salonComment" type="text" value="Comment" required>
+					</form>
+
+					<form id="form-bride">
+						<input id="bridesCountry" type="text" value="Country" required>
+						<input id="bridesName" type="text" value="Name" required>
+						<input id="bridesPhone" type="phone" value="Phone" required>
+						<input id="bridesComment" type="text" value="Comment" required>
+					</form>
+
+					<form id="form-feedback">
+						<input id="feedbacksCountry" type="text" value="Country" required>
+						<input id="feedbackName" type="text" value="Name" required>
+						<input id="feedbackEmail" type="email" value="Email" required>
+						<input id="feedbackPhone" type="phone" value="Phone" required>
+						<input id="feedbackComment" type="text" value="Comment" required>
 					</form>
 				</div>
 
@@ -392,6 +425,30 @@
 		</footer>
 			
 	</div>
+
+	<script>
+		// let bride = document.getElementsByClassName('footer__form1-bride').hidden = true;
+		// let feedback = document.getElementsByClassName('footer__form3-feedback').hidden = true;
+		// let salon = document.getElementsByClassName('footer__form2-salon').hidden = false;
+	</script>
+	<script>
+			// document.getElementsByClassName('bridesClass').style.display="none";
+		//    document.getElementById('feedbacks').onclick = function(){
+		// 		document.getElementById('feedbacksCountry').hidden = true;
+		// 		document.getElementById('feedbackEmail').hidden = true;
+		// 		document.getElementById('feedbackName').hidden = true;
+		// 		document.getElementById('feedbackPhone').hidden = true;
+		// 		document.getElementById('feedbackComment').hidden = true;
+		// }
+		//    document.getElementById('brides').onclick = function(){
+		// 		document.getElementById('bridesCountry').hidden = true;
+		// 		document.getElementById('bridesName').hidden = true;
+		// 		document.getElementById('bridesPhone').hidden = true;
+		// 		document.getElementById('bridesComment').hidden = true;
+		// }
+
+	</script>
+
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
