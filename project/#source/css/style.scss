@@ -43,21 +43,48 @@ nav{
 .nav__row-burger {
 	padding-right: 42px;
 }
+///slider
+.slider{
+	overflow:hidden;
+	height: 100%;
+	// max-height: 100px;
+	max-width: 100%;
+	min-width: 0;
+	img{
+		height: 100%;
+		width: 100%;
+		object-fit:cover;
+	}
+}
+
+.slick-track{
+	display: flex;
+}
+.slick-list{
+	overflow: hidden;
+}
+.slick-arrow{
+	display: none;
+}
+
+
 header{
 	display: flex;
 	align-items: flex-end;
 	justify-content:flex-end;
-	height: 91.8vh;
+	height: 92vh;
 	width: 100%;
-	background-image: url(../img/header.png);
-	background-repeat: no-repeat;
-	background-position: center;
-   background-size: cover;
+	// background-image: url(../img/header.png);
+	// background-repeat: no-repeat;
+	// background-position: center;
+ //   background-size: cover;
    color: #67513B;
 
 }
 .header__row {
     width: 100%;
+    position: absolute;
+    bottom: 50px;
 }
 .header__row-right {
 	font-size: 20px;
@@ -388,8 +415,10 @@ input[type=email]{
 	color: #000000;
 	ul{
 		display: flex;
+		justify-content: spapce-around;
 		li{
-			margin-left: 40px;
+			// margin-left: 40px;
+
 		}
 	}
 }
@@ -402,8 +431,9 @@ input[type=email]{
 	ul{
 		align-items:center;
 		display: flex;
+		justify-content: space-around;
 		li{
-			margin-right: 20px;
+			// margin-right: 20px;
 		}
 	}
 }
@@ -441,6 +471,11 @@ input[type=email]{
 		li{
 			padding-left: 20px;
 		}
+	}
+}
+@media(max-width: 1200px){
+	.header__row{
+		display: none;
 	}
 }
 
@@ -482,4 +517,41 @@ input[type=email]{
 	.main-gallery__row-right{
 		margin-left: 0px;
 	}
+	.footer-bootom__row-left{
+		li{
+			margin-left: 10px;
+		}
+	}
+	.footer-subTitle{
+		display: none;
+	}
+	.footer-bootom__row-center{
+		display: none;
+	}
+	.footer-bootom__row-left, .footer-bootom__row-right{
+		width: 50%;
+	}
+	header{
+		height: 100%;
+	}
+
+}
+@media(max-width: 767px) {
+	.footer__priorities, .footer__info{
+	min-width: 90%;
+	}	
+	.row-body{
+		width: 70%;
+	}
+	.main-gallery__row-left-body__text-title{
+		font-size: 35px;
+	}
+	.nav__row-burger{
+		padding-right: 5px;
+	}
+	.nav__row-start{
+		padding-left: 5px;
+	}
+
+
 }

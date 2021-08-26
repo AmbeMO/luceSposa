@@ -148,6 +148,33 @@ nav {
   padding-right: 42px;
 }
 
+.slider {
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.slider img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  display: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,17 +185,15 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 91.8vh;
+  height: 92vh;
   width: 100%;
-  background-image: url(../img/header.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   color: #67513B;
 }
 
 .header__row {
   width: 100%;
+  position: absolute;
+  bottom: 50px;
 }
 
 .header__row-right {
@@ -512,11 +537,10 @@ input[type=email] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: spapce-around;
+      -ms-flex-pack: spapce-around;
+          justify-content: spapce-around;
 }
-.footer-bootom__row-left ul li {
-  margin-left: 40px;
-}
-
 .footer-bootom__row-center {
   width: 33%;
   text-align: center;
@@ -532,11 +556,9 @@ input[type=email] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.footer-bootom__row-right ul li {
-  margin-right: 20px;
-}
-
 .footer-subTitle {
   text-align: center;
   padding-bottom: 13px;
@@ -579,6 +601,11 @@ input[type=email] {
   padding-left: 20px;
 }
 
+@media (max-width: 1200px) {
+  .header__row {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .title {
     text-align: center;
@@ -637,5 +664,46 @@ input[type=email] {
 
   .main-gallery__row-right {
     margin-left: 0px;
+  }
+
+  .footer-bootom__row-left li {
+    margin-left: 10px;
+  }
+
+  .footer-subTitle {
+    display: none;
+  }
+
+  .footer-bootom__row-center {
+    display: none;
+  }
+
+  .footer-bootom__row-left, .footer-bootom__row-right {
+    width: 50%;
+  }
+
+  header {
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .footer__priorities, .footer__info {
+    min-width: 90%;
+  }
+
+  .row-body {
+    width: 70%;
+  }
+
+  .main-gallery__row-left-body__text-title {
+    font-size: 35px;
+  }
+
+  .nav__row-burger {
+    padding-right: 5px;
+  }
+
+  .nav__row-start {
+    padding-left: 5px;
   }
 }
