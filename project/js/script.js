@@ -17,6 +17,10 @@ $(document).ready(function(){
             buttonbrides = $('#brides');
             buttonfeedbacks = $('#feedbacks');
 
+            salon.hide();
+            bride.hide();
+            feedback.hide();
+
         buttonsalons.click(function() {
             salon.show();
             bride.hide();
