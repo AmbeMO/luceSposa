@@ -99,17 +99,29 @@ $(document).ready(function(){
            
 
         buttonsalons.click(function() {
+        		buttonsalons.css('border-bottom', '1px solid black');
+        		buttonbrides.css('border-bottom', 'none');
+        		buttonfeedbacks.css('border-bottom', 'none');
+
             salon.show();
             bride.hide();
             feedback.hide();
         });
 
        buttonbrides.click(function() {
+       		buttonbrides.css('border-bottom', '1px solid black');
+       		buttonsalons.css('border-bottom', 'none');
+       		buttonfeedbacks.css('border-bottom', 'none');
+
             salon.hide();
             bride.show();
             feedback.hide();
         });
         buttonfeedbacks.click(function() {
+        		buttonfeedbacks.css('border-bottom', '1px solid black');
+        		buttonsalons.css('border-bottom', 'none');
+        		buttonbrides.css('border-bottom', 'none');
+
             salon.hide();
             bride.hide();
             feedback.show();
