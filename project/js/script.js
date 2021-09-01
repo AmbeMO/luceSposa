@@ -83,12 +83,20 @@ $(document).ready(function(){
             bride = $('#form-bride'),
             feedback = $('#form-feedback'),
             buttonsalons = $('#salons'),
-            buttonbrides = $('#brides');
-            buttonfeedbacks = $('#feedbacks');
+            buttonbrides = $('#brides'),
+            buttonfeedbacks = $('#feedbacks'),
 
+            buttonclose = $('.footer__priorities-close__row'),
+        		prioTitle = $('.footer__priorities-title'),
+        		prioText = $('.footer__priorities-text'),
+        		infoTitle = $('.footer__info-title'),
+        		infoText = $('.footer__info-text');
+
+       
             salon.hide();
             bride.hide();
             feedback.hide();
+           
 
         buttonsalons.click(function() {
             salon.show();
@@ -106,6 +114,13 @@ $(document).ready(function(){
             bride.hide();
             feedback.show();
         });
+
+        buttonclose.click(function() {
+        	prioTitle.hide();
+        	prioText.hide();
+        	infoTitle.hide();
+        	infoText.hide();
+        })
     });
 
 });
